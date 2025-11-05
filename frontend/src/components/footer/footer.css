@@ -1,0 +1,179 @@
+.footer {
+  width: 100%;
+  background: #f5f5f5;
+  padding: 60px 8% 20px;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+/* COLUMN STYLES */
+.footer-col {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-logo h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #302e2e;
+}
+
+.footer-logo span {
+  color: #ff7b00;
+}
+
+.footer-col p {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* SOCIAL ICONS */
+.footer-socials {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-socials a {
+  font-size: 22px;
+  color: #302e2e;
+  transition: color 0.3s ease;
+}
+
+.footer-socials a:hover {
+  color: #ff7b00;
+}
+
+/* LINK LISTS */
+.footer-col h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #302e2e;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+  color: #555;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ff7b00;
+}
+
+/* CONTACT INFO */
+.contact-info li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-info .icon {
+  color: #ff7b00;
+  font-size: 18px;
+}
+
+/* COPYRIGHT BAR */
+.footer-bottom {
+  border-top: 1px solid #ddd;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  color: #666;
+}
+.name{
+    color: #ff7b00;
+}
+
+
+
+/* Tablet screens (≤ 992px) */
+@media (max-width: 992px) {
+  .footer-container {
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .footer-col {
+    flex: 1 1 45%;
+    text-align: center;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+
+  .contact-info li {
+    justify-content: center;
+  }
+}
+
+/* Mobile screens (≤ 768px) */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .footer-col {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+
+  .contact-info li {
+    justify-content: center;
+  }
+}
+
+/* Small mobile (≤ 480px) */
+@media (max-width: 480px) {
+  .footer {
+    padding: 40px 5% 15px;
+  }
+
+  .footer-logo h2 {
+    font-size: 24px;
+  }
+
+  .footer-col h4 {
+    font-size: 16px;
+  }
+
+  .footer-col p,
+  .footer-col ul li a {
+    font-size: 14px;
+  }
+
+  .footer-socials a {
+    font-size: 20px;
+  }
+}

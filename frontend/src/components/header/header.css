@@ -1,0 +1,219 @@
+/* --- Layout --- */
+.h-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 5%;
+  position: relative;
+  z-index: 10;
+  background: #fff;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.icon img {
+  width: 70px;
+  height: 70px;
+}
+
+/* --- Desktop Nav --- */
+.desktop-nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.desktop-nav a {
+  color: #222;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.desktop-nav a:hover {
+  color: #0077ff;
+}
+
+.desktop-nav a.active {
+  color: #0077ff;
+}
+
+/* --- Auth Section --- */
+.register {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.primary__btn {
+  background: #0077ff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.primary__btn:hover {
+  background: #005fd4;
+}
+
+.username {
+  font-weight: 500;
+  color: #222;
+}
+
+/* --- Mobile Menu Icon --- */
+.m-menu {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.m-menu i {
+  color: orange;
+  
+}
+
+/* --- Mobile Menu Overlay --- */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 70%;
+  height: 100vh;
+  background: #fff;
+  box-shadow: -5px 0 20px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+}
+
+.mobile-menu.open {
+  right: 0;
+}
+
+.close-btn {
+  font-size: 2rem;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.close-btn i {
+  color: orange;
+  
+}
+
+.mobile-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.mobile-links a {
+  font-size: 1.1rem;
+  color: #222;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.mobile-links a.active,
+.mobile-links a:hover {
+  color: #0077ff;
+}
+
+/* --- Responsive Adjustments --- */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .icon img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .desktop-nav {
+    gap: 1.5rem;
+  }
+
+  .primary__btn {
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+/* --- Mobile --- */
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .m-menu {
+    display: block;
+  }
+
+  .h-container {
+    justify-content: space-between;
+    padding: 0.8rem 1rem;
+    gap: .3rem;
+  }
+
+  .icon img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .icon {
+    font-size: 1rem;
+  }
+
+  .register {
+    gap: 0.4rem;
+  }
+
+  .primary__btn {
+    background: #0077ff;
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+
+  .username {
+    font-size: 0.8rem;
+  }
+}
+
+/* --- Extra Small Devices --- */
+@media (max-width: 480px) {
+  .icon img {
+    width: 42px;
+    height: 42px;
+  }
+
+  .icon {
+    font-size: 0.9rem;
+  }
+
+  .primary__btn {
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
+  }
+  
+
+  .mobile-links a {
+    font-size: 1rem;
+  }
+
+  button .Link{
+  font-size: 10px;
+  }
+}

@@ -1,0 +1,125 @@
+.subscribe-section {
+  width: 100%;
+  background:var(--primary-color);
+  padding: 18px 8%;
+}
+
+.subscribe-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+  /* flex-wrap: wrap; */
+}
+
+/* LEFT SIDE TEXT */
+.subscribe-text {
+  flex: 1;
+  max-width: 500px;
+}
+
+.subscribe-sub {
+  color: #ff7b00;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.subscribe-main {
+  font-size: 36px;
+  color: #302e2e;
+  font-weight: 700;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+.subscribe-desc {
+  color: black;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+/* RIGHT SIDE IMAGE + FORM */
+.subscribe-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.subscribe-img {
+  width: 350px;
+  height: 370px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.subscribe-form input {
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  width: 300px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.subscribe-form input:focus {
+  border-color: #ff7b00;
+}
+
+.subscribe-form button {
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  background: #ff7b00;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.subscribe-form button:hover {
+  background: #e26e00;
+}
+
+/* 🌐 Responsive */
+@media (max-width: 768px) {
+  .subscribe-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .subscribe-right {
+    width: 100%;
+  }
+
+  .subscribe-img {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+  }
+
+  .subscribe-form input {
+    width: 90%;
+  }
+
+  .subscribe-form button {
+    width: 90%;
+  }
+}

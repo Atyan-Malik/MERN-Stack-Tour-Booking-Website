@@ -1,0 +1,149 @@
+.home-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3rem;
+  padding: 0 5%;
+  flex-wrap: wrap;
+}
+
+/* Left Content */
+.hero-left {
+  flex: 1;
+  max-width: 500px;
+  margin-top: 20px;
+}
+
+.heading-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.heading-left p {
+  line-height: 40px;
+}
+
+.heading-one {
+  font-size: 30px;
+  line-height: 50px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Small icon beside heading */
+.w-img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Right Content (Image + Video) */
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.img-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.img-container img {
+  width: 200px;
+  height: 350px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.img-container video {
+  width: 200px;
+  height: 280px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+
+/* Tablets and smaller laptops */
+@media (max-width: 992px) {
+  .home-container {
+    padding: 0 3%;
+  }
+
+  .heading-one {
+    font-size: 26px;
+    line-height: 40px;
+  }
+
+  .img-container img,
+  .img-container video {
+    width: 180px;
+    height: auto;
+  }
+}
+
+/* Mobile (≤768px): switch to column layout */
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .hero-left,
+  .hero-right {
+    width: 100%;
+  }
+
+  .heading-left {
+    justify-content: center;
+  }
+
+  .heading-one {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
+
+  .w-img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .img-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .img-container img,
+  .img-container video {
+    width: 90%;
+    height: auto;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+}
+
+/* Extra small screens (≤480px) */
+@media (max-width: 480px) {
+  .heading-one {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .img-container img,
+  .img-container video {
+    width: 100%;
+  }
+}

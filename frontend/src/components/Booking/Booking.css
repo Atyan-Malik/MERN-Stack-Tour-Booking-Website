@@ -1,0 +1,15 @@
+.booking-container{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.booking-head{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.booking-head h1{
+    text-align: center;
+}

@@ -1,0 +1,19 @@
+.thank-box{
+    padding: 80px 10px;
+    text-align: center;
+
+
+   
+}
+
+.thank-box i {
+    color: green;
+    font-size: 35px;
+}
+.thank-box .thank_h {
+   text-align: center;
+  font-family: Island Moments, cursive;
+  font-size: 40px ;
+
+}
+

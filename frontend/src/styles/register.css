@@ -1,0 +1,9 @@
+.login-form{
+   padding: 6rem 3rem;
+   
+}
+
+.login-form p{
+   position: relative;
+   bottom: 20px;
+}
